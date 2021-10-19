@@ -493,22 +493,22 @@ systemctl enable trojan
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
-wget -O add-ws "https://raw.githubusercontent.com/annettedigital/vpn/main/add-ws.sh"
-wget -O add-wstls "https://raw.githubusercontent.com/annettedigital/vpn/main/add-wstls.sh"
-wget -O add-vless "https://raw.githubusercontent.com/annettedigital/vpn/main/add-vless.sh"
-wget -O add-tr "https://raw.githubusercontent.com/annettedigital/vpn/main/add-tr.sh"
-wget -O del-ws "https://raw.githubusercontent.com/annettedigital/vpn/main/del-ws.sh"
-wget -O del-non "https://raw.githubusercontent.com/annettedigital/vpn/main/del-non.sh"
-wget -O del-vless "https://raw.githubusercontent.com/annettedigital/vpn/main/del-vless.sh"
-wget -O del-tr "https://raw.githubusercontent.com/annettedigital/vpn/main/del-tr.sh"
-wget -O cek-ws "https://raw.githubusercontent.com/annettedigital/vpn/main/cek-ws.sh"
-wget -O cek-vless "https://raw.githubusercontent.com/annettedigital/vpn/main/cek-vless.sh"
-wget -O cek-tr "https://raw.githubusercontent.com/annettedigital/vpn/main/cek-tr.sh"
-wget -O renew-ws "https://raw.githubusercontent.com/annettedigital/vpn/main/renew-ws.sh"
-wget -O renew-non "https://raw.githubusercontent.com/annettedigital/vpn/main/renew-non.sh"
-wget -O renew-vless "https://raw.githubusercontent.com/annettedigital/vpn/main/renew-vless.sh"
-wget -O renew-tr "https://raw.githubusercontent.com/annettedigital/vpn/main/renew-tr.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/annettedigital/vpn/main/cert.sh"
+wget -O add-ws "https://raw.githubusercontent.com/annetedigital/vpn/main/add-ws.sh"
+wget -O add-wstls "https://raw.githubusercontent.com/annetedigital/vpn/main/add-wstls.sh"
+wget -O add-vless "https://raw.githubusercontent.com/annetedigital/vpn/main/add-vless.sh"
+wget -O add-tr "https://raw.githubusercontent.com/annetedigital/vpn/main/add-tr.sh"
+wget -O del-ws "https://raw.githubusercontent.com/annetedigital/vpn/main/del-ws.sh"
+wget -O del-non "https://raw.githubusercontent.com/annetedigital/vpn/main/del-non.sh"
+wget -O del-vless "https://raw.githubusercontent.com/annetedigital/vpn/main/del-vless.sh"
+wget -O del-tr "https://raw.githubusercontent.com/annetedigital/vpn/main/del-tr.sh"
+wget -O cek-ws "https://raw.githubusercontent.com/annetedigital/vpn/main/cek-ws.sh"
+wget -O cek-vless "https://raw.githubusercontent.com/annetedigital/vpn/main/cek-vless.sh"
+wget -O cek-tr "https://raw.githubusercontent.com/annetedigital/vpn/main/cek-tr.sh"
+wget -O renew-ws "https://raw.githubusercontent.com/annetedigital/vpn/main/renew-ws.sh"
+wget -O renew-non "https://raw.githubusercontent.com/annetedigital/vpn/main/renew-non.sh"
+wget -O renew-vless "https://raw.githubusercontent.com/annetedigital/vpn/main/renew-vless.sh"
+wget -O renew-tr "https://raw.githubusercontent.com/annetedigital/vpn/main/renew-tr.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/annetedigital/vpn/main/cert.sh"
 chmod +x add-ws
 chmod +x add-wstls
 chmod +x add-vless
