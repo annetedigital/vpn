@@ -100,4 +100,4 @@ clear
 	echo -e "===========================" | lolcat
 	echo -e "Link OBFS HTTP : $linkss2"
 	echo -e "===========================" | lolcat
-	echo -e "AutoScript By Endka"
+	echo -e "AutoScript By Zico"
