@@ -23,7 +23,7 @@ CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
 IPVPS=$(curl -s ipinfo.io/ip )
 	echo "--------------- Welcome To Premium Script Menu ---------------"
-	echo "------------------------ Moddified By Endka -----------------------"
+	echo "------------------------ Moddified By Zico -----------------------"
 	echo " "
 	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
