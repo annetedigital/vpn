@@ -72,5 +72,5 @@ echo -e "=================" | lolcat
 echo -e "bimbel.ruangguru.com:2082@$Login:$Pass"
 echo -e "================================" | lolcat
 echo -e "Expired On     : $exp"
-echo -e "AutoScript By Endka"
+echo -e "AutoScript By Zico"
 
