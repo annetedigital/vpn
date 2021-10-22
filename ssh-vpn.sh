@@ -20,7 +20,7 @@ commonname=www.endka.xyz
 email=admin@endka.xyz
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/annettedigital/vpn/main/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/annetedigital/vpn/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -92,14 +92,14 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/annettedigital/vpn/main/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/annetedigital/vpn/main/nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/annettedigital/vpn/main/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/annetedigital/vpn/main/vps.conf"
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/annettedigital/vpn/main/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/annetedigital/vpn/main/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -129,7 +129,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/annettedigital/vpn/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/annetedigital/vpn/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -183,13 +183,13 @@ sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
 #OpenVPN
-wget https://raw.githubusercontent.com/annettedigital/vpn/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/annetedigital/vpn/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 #Edu
-wget https://raw.githubusercontent.com/annettedigital/vpn/main/edu.sh &&  chmod +x edu.sh && ./edu.sh
+wget https://raw.githubusercontent.com/annetedigital/vpn/main/edu.sh &&  chmod +x edu.sh && ./edu.sh
 
 #Edu-Tls
-wget https://raw.githubusercontent.com/annettedigital/vpn/main/edu-tls.sh &&  chmod +x edu-tls.sh && ./edu-tls.sh
+wget https://raw.githubusercontent.com/annetedigital/vpn/main/edu-tls.sh &&  chmod +x edu-tls.sh && ./edu-tls.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -222,7 +222,7 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/annettedigital/vpn/main/bannerssh.conf"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/annetedigital/vpn/main/bannerssh.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
